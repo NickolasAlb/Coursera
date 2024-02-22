@@ -17,25 +17,107 @@ h1 {
 
 p {
   border: 1px solid black;
-  background-color: #00549a;
   width: 100%;
-  height: 100px;
-  margin-right: 10px;
-  text-align: top-left; 
-  font-family: Helvetica;
+  height: 175px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center; 
+  font-family: Arial;
+  font-size: 18px;
   color: white;
+  overflow: auto;
 }
 
+span 	{
+		font-family: Arial;
+		font-size: 25px;
+		color: white;
+		padding: 3px;
+		}
 
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
+#box1 
+		{
+		background-color: #6A370A;
+		height: 225px;
+		margin-left: 20px;
+		margin-right: 10px;
+		position: relative;
+		border: 1px solid black
+		
+		}
+		
+#box2 
+		{
+		background-color: #FFAE00;
+		height: 225px;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: relative;
+		border: 1px solid black
+		}
+		
+#box3 
+		{
+		background-color: #C40000;
+		height: 225px;
+		margin-left: 10px;
+		margin-right: 20px;
+		position: relative;
+		border: 1px solid black
+		}
+	
+#boxname1 
+		{
+		background-color: #AB968B;
+		float: right;
+		border-left: 1px solid black;
+		border-bottom: 1px solid black;
+		}	
 
+#boxname2 
+		{
+		background-color: #F19F5B;
+		float: right;
+		border-left: 1px solid black;
+		border-bottom: 1px solid black;
+		}
+		
+#boxname3 
+		{
+		background-color: #D98484;
+		float: right;
+		border-left: 1px solid black;
+		border-bottom: 1px solid black;
+		}
+		
+#content1 
+		{
+		margin-top: 40px;
+		border:0;	
+		}		
+		
+#content2 
+		{
+		margin-top: 40px;
+		border:0;	
+		}		
+		
+#content3 
+		{
+		margin-top: 40px;
+		border:0;	
+		}
 /********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
+
   }
   .col-lg-1 {
     width: 8.33%;
@@ -80,6 +162,37 @@ p {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
   float: left;
   }
+  #box1 
+		{
+		background-color: #6A370A;
+		margin-right: 10px;
+		margin-left: 20px;
+		height: 225px;
+		position: relative;
+		border: 1px solid black
+		
+		}
+		
+	#box2 
+		{
+		background-color: #FFAE00;
+		margin-left: 10px;
+		margin-right: 20px;
+		height: 225px;
+		position: relative;
+		border: 1px solid black
+		}
+		
+	#box3 
+		{
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		background-color: #C40000;
+		height: 225px;
+		position: relative;
+		border: 1px solid black
+		}
   .col-md-1 {
     width: 8.33%;
   }
@@ -122,8 +235,39 @@ p {
 @media(max-width: 767px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-	margin-right: 10px;
   }
+  #box1 
+		{
+		background-color: #6A370A;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		height: 225px;
+		position: relative;
+		border: 1px solid black		
+		}
+		
+  #box2 
+		{
+		background-color: #FFAE00;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		height: 225px;
+		position: relative;
+		border: 1px solid black
+		}
+		
+	#box3 
+		{
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		background-color: #C40000;
+		height: 225px;
+		position: relative;
+		border: 1px solid black
+		}
   .col-sm-1 {
     width: 8.33%;
   }
@@ -161,20 +305,38 @@ p {
     width: 100%;
   }
 }
+
+
+		
 </style>
 </head>
 <body>
 <h1><center> Aliment Shop </center></h1>
 
-<div class="row">
+<div id="info"class="row">
 	<div class="col-lg-4 col-md-6 col-sm-12">
-		<p id="p1">Peach</p>		
+		<div id="box1">
+			<span id="boxname1">
+			Potatoes
+			</span>
+			<p id="content1">Season with a teaspoon of salt per pound of potatoes. Bring water to a boil over high heat, then reduce heat to medium and cook at rapid simmer until potatoes are easily pierced with a paring knife, about 10 minutes for chopped potatoes and 20 minutes for whole potatoes.</p>
+		</div>			
 	</div>
 	<div class="col-lg-4 col-md-6 col-sm-12">
-		<p id="p2">Potatoes</p>		
+		<div id="box2">
+			<span id="boxname2">
+			Peaches
+			</span>
+			<p id="content2">Process hot pack peaches in the water bath canner for the durations listed below, based on the size of your jars and your altitude: Altitude 0 to 1,000 feet: Pints, 20 minutes, quarts, 25 minutes. Altitude 1,001 to 3,000 feet: Pints, 25 minutes, quarts, 30 minutes.</p>
+		</div>		
 	</div>
 	<div class="col-lg-4 col-md-12 col-sm-12">
-		<p id="p3">Tomatoes</p>		
+		<div id="box3">
+			<span id="boxname3">
+			Tomatoes
+			</span>
+			<p id="content3">Tomatoes are, of course, delicious raw, sautéed, grilled, stewed, and added to many preparations. Use a serrated knife or very sharp non-serrated knife to slice or chop tomatoes or prick the skin to get a slice going. Cut tomatoes lengthwise from stem to blossom end to retain more juice in each slice.</p>
+		</div>		
 	</div>
 </div>
 
